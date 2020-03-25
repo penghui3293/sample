@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A1B6C3D2411F65500812C5C /* ICONBLACK.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1B6C3C2411F65500812C5C /* ICONBLACK.png */; };
+		1A1B6C442412191900812C5C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1B6C432412191900812C5C /* NotificationCenter.framework */; };
+		1A1B6C4F2412191900812C5C /* GTToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A1B6C422412191900812C5C /* GTToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A1B6C5524121EAF00812C5C /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B6C472412191900812C5C /* TodayViewController.m */; };
+		1A1B6C5624121EB300812C5C /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B6C472412191900812C5C /* TodayViewController.m */; };
+		1A1B6C5724121F1900812C5C /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A343696240FE4DC00FB08ED /* TencentOpenAPI.framework */; };
+		1A1B6C5C2412293700812C5C /* GTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B6C5B2412293700812C5C /* GTSearchBar.m */; };
+		1A343647240FA11200FB08ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343646240FA11200FB08ED /* AppDelegate.m */; };
+		1A34364F240FA11300FB08ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A34364E240FA11300FB08ED /* Assets.xcassets */; };
+		1A343655240FA11300FB08ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343654240FA11300FB08ED /* main.m */; };
+		1A34365D240FA28F00FB08ED /* GTNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34365B240FA28F00FB08ED /* GTNewsViewController.m */; };
+		1A343660240FA30D00FB08ED /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34365E240FA30D00FB08ED /* GTVideoViewController.m */; };
+		1A343663240FA33400FB08ED /* GTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343661240FA33400FB08ED /* GTRecommendViewController.m */; };
+		1A343666240FA34C00FB08ED /* GTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343664240FA34C00FB08ED /* GTMineViewController.m */; };
+		1A343679240FE38C00FB08ED /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343677240FE38C00FB08ED /* GTListLoader.m */; };
+		1A34367E240FE3C300FB08ED /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34367B240FE3C300FB08ED /* GTDeleteCellView.m */; };
+		1A34367F240FE3C300FB08ED /* GTNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34367D240FE3C300FB08ED /* GTNormalTableViewCell.m */; };
+		1A343682240FE40900FB08ED /* GTLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343681240FE40900FB08ED /* GTLogin.m */; };
+		1A343689240FE43C00FB08ED /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343684240FE43C00FB08ED /* GTVideoPlayer.m */; };
+		1A34368A240FE43C00FB08ED /* GTVideoCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343686240FE43C00FB08ED /* GTVideoCoverView.m */; };
+		1A34368B240FE43C00FB08ED /* GTVideoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343688240FE43C00FB08ED /* GTVideoToolbar.m */; };
+		1A343692240FE46B00FB08ED /* GTSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34368C240FE46A00FB08ED /* GTSplashView.m */; };
+		1A343693240FE46B00FB08ED /* GTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34368D240FE46A00FB08ED /* GTMediator.m */; };
+		1A343694240FE46B00FB08ED /* GTScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34368F240FE46B00FB08ED /* GTScreen.m */; };
+		1A34369A240FE4DC00FB08ED /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A343696240FE4DC00FB08ED /* TencentOpenAPI.framework */; };
+		1A34369B240FE4DC00FB08ED /* libGTStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A343698240FE4DC00FB08ED /* libGTStatic.a */; };
+		1A34369C240FE4DC00FB08ED /* GTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A343699240FE4DC00FB08ED /* GTFramework.framework */; };
+		1A38273C24109B9A00B1E094 /* GTFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A343699240FE4DC00FB08ED /* GTFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A38273F24109C5A00B1E094 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A38273E24109C5A00B1E094 /* icon.bundle */; };
+		1A3827422410D09800B1E094 /* GTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3827412410D09800B1E094 /* GTLocation.m */; };
+		1A3827452410E26700B1E094 /* GTNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3827442410E26700B1E094 /* GTNotification.m */; };
+		1A5291B52428458A00792D71 /* GTVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5291B42428458A00792D71 /* GTVideoModel.m */; };
+		1A542C6A24132B5A0080D26E /* GTCommentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A542C6924132B5A0080D26E /* GTCommentManager.m */; };
+		1A952C532424AF1B0067EDE7 /* GTListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A343674240FE38C00FB08ED /* GTListItem.m */; };
+		1ACD4E9E2424EACA00C4F5D3 /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0F34E7242495850015F838 /* GTDetailViewController.m */; };
+		1AFBEEAF242116980046A1A0 /* GTRNSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBEEAE242116980046A1A0 /* GTRNSModel.m */; };
+		4C8F8B7BE2CF397A5AE8820B /* Pods_GTToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4852F3972E32233FE90E0B55 /* Pods_GTToday.framework */; };
+		ECD7577118D351B802D6AC26 /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6246D1E9B524D4378D6511 /* Pods_SampleApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A1B6C4D2412191900812C5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A34363A240FA11200FB08ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1B6C412412191900812C5C;
+			remoteInfo = GTToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A1B6C532412191900812C5C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A1B6C4F2412191900812C5C /* GTToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A38273D24109B9B00B1E094 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A38273C24109B9A00B1E094 /* GTFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE0C16B241F33D200FEADE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		098441D4724A6D11D7F2384D /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1A0F34E6242495850015F838 /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
+		1A0F34E7242495850015F838 /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
+		1A1B6C3C2411F65500812C5C /* ICONBLACK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONBLACK.png; sourceTree = "<group>"; };
+		1A1B6C422412191900812C5C /* GTToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GTToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1B6C432412191900812C5C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1A1B6C462412191900812C5C /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		1A1B6C472412191900812C5C /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		1A1B6C4C2412191900812C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1B6C582412208900812C5C /* SampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleApp.entitlements; sourceTree = "<group>"; };
+		1A1B6C59241220B400812C5C /* GTToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GTToday.entitlements; sourceTree = "<group>"; };
+		1A1B6C5A2412293700812C5C /* GTSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSearchBar.h; sourceTree = "<group>"; };
+		1A1B6C5B2412293700812C5C /* GTSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSearchBar.m; sourceTree = "<group>"; };
+		1A287B322418E2CD007615C1 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A343642240FA11200FB08ED /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A343645240FA11200FB08ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A343646240FA11200FB08ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A34364E240FA11300FB08ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A343653240FA11300FB08ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A343654240FA11300FB08ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A34365B240FA28F00FB08ED /* GTNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNewsViewController.m; sourceTree = "<group>"; };
+		1A34365C240FA28F00FB08ED /* GTNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNewsViewController.h; sourceTree = "<group>"; };
+		1A34365E240FA30D00FB08ED /* GTVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTVideoViewController.m; sourceTree = "<group>"; };
+		1A34365F240FA30D00FB08ED /* GTVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTVideoViewController.h; sourceTree = "<group>"; };
+		1A343661240FA33400FB08ED /* GTRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRecommendViewController.m; sourceTree = "<group>"; };
+		1A343662240FA33400FB08ED /* GTRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRecommendViewController.h; sourceTree = "<group>"; };
+		1A343664240FA34C00FB08ED /* GTMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMineViewController.m; sourceTree = "<group>"; };
+		1A343665240FA34C00FB08ED /* GTMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMineViewController.h; sourceTree = "<group>"; };
+		1A343674240FE38C00FB08ED /* GTListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTListItem.m; sourceTree = "<group>"; };
+		1A343675240FE38C00FB08ED /* GTListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTListItem.h; sourceTree = "<group>"; };
+		1A343676240FE38C00FB08ED /* GTListLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTListLoader.h; sourceTree = "<group>"; };
+		1A343677240FE38C00FB08ED /* GTListLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTListLoader.m; sourceTree = "<group>"; };
+		1A34367A240FE3C300FB08ED /* GTDeleteCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDeleteCellView.h; sourceTree = "<group>"; };
+		1A34367B240FE3C300FB08ED /* GTDeleteCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDeleteCellView.m; sourceTree = "<group>"; };
+		1A34367C240FE3C300FB08ED /* GTNormalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNormalTableViewCell.h; sourceTree = "<group>"; };
+		1A34367D240FE3C300FB08ED /* GTNormalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNormalTableViewCell.m; sourceTree = "<group>"; };
+		1A343680240FE40900FB08ED /* GTLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLogin.h; sourceTree = "<group>"; };
+		1A343681240FE40900FB08ED /* GTLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLogin.m; sourceTree = "<group>"; };
+		1A343683240FE43C00FB08ED /* GTVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTVideoPlayer.h; sourceTree = "<group>"; };
+		1A343684240FE43C00FB08ED /* GTVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
+		1A343685240FE43C00FB08ED /* GTVideoCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTVideoCoverView.h; sourceTree = "<group>"; };
+		1A343686240FE43C00FB08ED /* GTVideoCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTVideoCoverView.m; sourceTree = "<group>"; };
+		1A343687240FE43C00FB08ED /* GTVideoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTVideoToolbar.h; sourceTree = "<group>"; };
+		1A343688240FE43C00FB08ED /* GTVideoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTVideoToolbar.m; sourceTree = "<group>"; };
+		1A34368C240FE46A00FB08ED /* GTSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSplashView.m; sourceTree = "<group>"; };
+		1A34368D240FE46A00FB08ED /* GTMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMediator.m; sourceTree = "<group>"; };
+		1A34368E240FE46B00FB08ED /* GTScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTScreen.h; sourceTree = "<group>"; };
+		1A34368F240FE46B00FB08ED /* GTScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTScreen.m; sourceTree = "<group>"; };
+		1A343690240FE46B00FB08ED /* GTMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMediator.h; sourceTree = "<group>"; };
+		1A343691240FE46B00FB08ED /* GTSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSplashView.h; sourceTree = "<group>"; };
+		1A343695240FE4DC00FB08ED /* GTStaticTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTStaticTest.h; sourceTree = "<group>"; };
+		1A343696240FE4DC00FB08ED /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		1A343697240FE4DC00FB08ED /* GTStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTStatic.h; sourceTree = "<group>"; };
+		1A343698240FE4DC00FB08ED /* libGTStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGTStatic.a; sourceTree = "<group>"; };
+		1A343699240FE4DC00FB08ED /* GTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTFramework.framework; sourceTree = "<group>"; };
+		1A38273E24109C5A00B1E094 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
+		1A3827402410D09800B1E094 /* GTLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTLocation.h; sourceTree = "<group>"; };
+		1A3827412410D09800B1E094 /* GTLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTLocation.m; sourceTree = "<group>"; };
+		1A3827432410E26700B1E094 /* GTNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNotification.h; sourceTree = "<group>"; };
+		1A3827442410E26700B1E094 /* GTNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNotification.m; sourceTree = "<group>"; };
+		1A5291B32428458A00792D71 /* GTVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoModel.h; sourceTree = "<group>"; };
+		1A5291B42428458A00792D71 /* GTVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoModel.m; sourceTree = "<group>"; };
+		1A542C6824132B5A0080D26E /* GTCommentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTCommentManager.h; sourceTree = "<group>"; };
+		1A542C6924132B5A0080D26E /* GTCommentManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTCommentManager.m; sourceTree = "<group>"; };
+		1AFBEEAD242116980046A1A0 /* GTRNSModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTRNSModel.h; sourceTree = "<group>"; };
+		1AFBEEAE242116980046A1A0 /* GTRNSModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTRNSModel.m; sourceTree = "<group>"; };
+		3D6246D1E9B524D4378D6511 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4852F3972E32233FE90E0B55 /* Pods_GTToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		983CA9D603CE8F9ACBD7881A /* Pods-GTToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTToday.debug.xcconfig"; path = "Target Support Files/Pods-GTToday/Pods-GTToday.debug.xcconfig"; sourceTree = "<group>"; };
+		A11ACD70EF6B4CB5C43F275C /* Pods-GTToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTToday.release.xcconfig"; path = "Target Support Files/Pods-GTToday/Pods-GTToday.release.xcconfig"; sourceTree = "<group>"; };
+		CB9225967BF08FE46E9C0E96 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A1B6C3F2412191900812C5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1B6C442412191900812C5C /* NotificationCenter.framework in Frameworks */,
+				1A1B6C5724121F1900812C5C /* TencentOpenAPI.framework in Frameworks */,
+				4C8F8B7BE2CF397A5AE8820B /* Pods_GTToday.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A34363F240FA11200FB08ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A34369B240FE4DC00FB08ED /* libGTStatic.a in Frameworks */,
+				1A34369A240FE4DC00FB08ED /* TencentOpenAPI.framework in Frameworks */,
+				1A34369C240FE4DC00FB08ED /* GTFramework.framework in Frameworks */,
+				ECD7577118D351B802D6AC26 /* Pods_SampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A1B6C3B2411F61000812C5C /* AlternateIcons */ = {
+			isa = PBXGroup;
+			children = (
+				1A1B6C3C2411F65500812C5C /* ICONBLACK.png */,
+			);
+			path = AlternateIcons;
+			sourceTree = "<group>";
+		};
+		1A1B6C452412191900812C5C /* GTToday */ = {
+			isa = PBXGroup;
+			children = (
+				1A1B6C59241220B400812C5C /* GTToday.entitlements */,
+				1A1B6C462412191900812C5C /* TodayViewController.h */,
+				1A1B6C472412191900812C5C /* TodayViewController.m */,
+				1A1B6C4C2412191900812C5C /* Info.plist */,
+			);
+			path = GTToday;
+			sourceTree = "<group>";
+		};
+		1A343639240FA11200FB08ED = {
+			isa = PBXGroup;
+			children = (
+				1A343644240FA11200FB08ED /* SampleApp */,
+				1A1B6C452412191900812C5C /* GTToday */,
+				1A343643240FA11200FB08ED /* Products */,
+				B29150C88E4BADA6F5E733DC /* Pods */,
+				A10FC67B66B31552B7275914 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A343643240FA11200FB08ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A343642240FA11200FB08ED /* SampleApp.app */,
+				1A1B6C422412191900812C5C /* GTToday.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A343644240FA11200FB08ED /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				1A1B6C582412208900812C5C /* SampleApp.entitlements */,
+				1A1B6C3B2411F61000812C5C /* AlternateIcons */,
+				1A343670240FA4C700FB08ED /* GTFramework */,
+				1A34366F240FA4BD00FB08ED /* Utils */,
+				1A34366E240FA4AD00FB08ED /* MIneController */,
+				1A34366D240FA49300FB08ED /* RecommendController */,
+				1A34366C240FA47F00FB08ED /* VideoController */,
+				1A343667240FA3DC00FB08ED /* NewsController */,
+				1A343645240FA11200FB08ED /* AppDelegate.h */,
+				1A343646240FA11200FB08ED /* AppDelegate.m */,
+				1A34364E240FA11300FB08ED /* Assets.xcassets */,
+				1A343653240FA11300FB08ED /* Info.plist */,
+				1A343654240FA11300FB08ED /* main.m */,
+				1A38273E24109C5A00B1E094 /* icon.bundle */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		1A343667240FA3DC00FB08ED /* NewsController */ = {
+			isa = PBXGroup;
+			children = (
+				1A343668240FA3FB00FB08ED /* Controller */,
+				1A34366B240FA42A00FB08ED /* Detail */,
+				1A343669240FA40C00FB08ED /* Model */,
+				1A34366A240FA41E00FB08ED /* View */,
+			);
+			path = NewsController;
+			sourceTree = "<group>";
+		};
+		1A343668240FA3FB00FB08ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A34365C240FA28F00FB08ED /* GTNewsViewController.h */,
+				1A34365B240FA28F00FB08ED /* GTNewsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A343669240FA40C00FB08ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A343675240FE38C00FB08ED /* GTListItem.h */,
+				1A343674240FE38C00FB08ED /* GTListItem.m */,
+				1A343676240FE38C00FB08ED /* GTListLoader.h */,
+				1A343677240FE38C00FB08ED /* GTListLoader.m */,
+				1A5291B32428458A00792D71 /* GTVideoModel.h */,
+				1A5291B42428458A00792D71 /* GTVideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A34366A240FA41E00FB08ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A34367A240FE3C300FB08ED /* GTDeleteCellView.h */,
+				1A34367B240FE3C300FB08ED /* GTDeleteCellView.m */,
+				1A34367C240FE3C300FB08ED /* GTNormalTableViewCell.h */,
+				1A34367D240FE3C300FB08ED /* GTNormalTableViewCell.m */,
+				1A1B6C5A2412293700812C5C /* GTSearchBar.h */,
+				1A1B6C5B2412293700812C5C /* GTSearchBar.m */,
+				1A542C6824132B5A0080D26E /* GTCommentManager.h */,
+				1A542C6924132B5A0080D26E /* GTCommentManager.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A34366B240FA42A00FB08ED /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1A0F34E6242495850015F838 /* GTDetailViewController.h */,
+				1A0F34E7242495850015F838 /* GTDetailViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1A34366C240FA47F00FB08ED /* VideoController */ = {
+			isa = PBXGroup;
+			children = (
+				1A34365F240FA30D00FB08ED /* GTVideoViewController.h */,
+				1A34365E240FA30D00FB08ED /* GTVideoViewController.m */,
+				1A343685240FE43C00FB08ED /* GTVideoCoverView.h */,
+				1A343686240FE43C00FB08ED /* GTVideoCoverView.m */,
+				1A343683240FE43C00FB08ED /* GTVideoPlayer.h */,
+				1A343684240FE43C00FB08ED /* GTVideoPlayer.m */,
+				1A343687240FE43C00FB08ED /* GTVideoToolbar.h */,
+				1A343688240FE43C00FB08ED /* GTVideoToolbar.m */,
+			);
+			path = VideoController;
+			sourceTree = "<group>";
+		};
+		1A34366D240FA49300FB08ED /* RecommendController */ = {
+			isa = PBXGroup;
+			children = (
+				1A343662240FA33400FB08ED /* GTRecommendViewController.h */,
+				1A343661240FA33400FB08ED /* GTRecommendViewController.m */,
+				1AFBEEAD242116980046A1A0 /* GTRNSModel.h */,
+				1AFBEEAE242116980046A1A0 /* GTRNSModel.m */,
+			);
+			path = RecommendController;
+			sourceTree = "<group>";
+		};
+		1A34366E240FA4AD00FB08ED /* MIneController */ = {
+			isa = PBXGroup;
+			children = (
+				1A343665240FA34C00FB08ED /* GTMineViewController.h */,
+				1A343664240FA34C00FB08ED /* GTMineViewController.m */,
+				1A343680240FE40900FB08ED /* GTLogin.h */,
+				1A343681240FE40900FB08ED /* GTLogin.m */,
+			);
+			path = MIneController;
+			sourceTree = "<group>";
+		};
+		1A34366F240FA4BD00FB08ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1A343690240FE46B00FB08ED /* GTMediator.h */,
+				1A34368D240FE46A00FB08ED /* GTMediator.m */,
+				1A34368E240FE46B00FB08ED /* GTScreen.h */,
+				1A34368F240FE46B00FB08ED /* GTScreen.m */,
+				1A343691240FE46B00FB08ED /* GTSplashView.h */,
+				1A34368C240FE46A00FB08ED /* GTSplashView.m */,
+				1A3827402410D09800B1E094 /* GTLocation.h */,
+				1A3827412410D09800B1E094 /* GTLocation.m */,
+				1A3827432410E26700B1E094 /* GTNotification.h */,
+				1A3827442410E26700B1E094 /* GTNotification.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1A343670240FA4C700FB08ED /* GTFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1A343699240FE4DC00FB08ED /* GTFramework.framework */,
+				1A343697240FE4DC00FB08ED /* GTStatic.h */,
+				1A343695240FE4DC00FB08ED /* GTStaticTest.h */,
+				1A343698240FE4DC00FB08ED /* libGTStatic.a */,
+				1A343696240FE4DC00FB08ED /* TencentOpenAPI.framework */,
+			);
+			path = GTFramework;
+			sourceTree = "<group>";
+		};
+		A10FC67B66B31552B7275914 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A287B322418E2CD007615C1 /* AFNetworking.framework */,
+				3D6246D1E9B524D4378D6511 /* Pods_SampleApp.framework */,
+				1A1B6C432412191900812C5C /* NotificationCenter.framework */,
+				4852F3972E32233FE90E0B55 /* Pods_GTToday.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B29150C88E4BADA6F5E733DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				098441D4724A6D11D7F2384D /* Pods-SampleApp.debug.xcconfig */,
+				CB9225967BF08FE46E9C0E96 /* Pods-SampleApp.release.xcconfig */,
+				983CA9D603CE8F9ACBD7881A /* Pods-GTToday.debug.xcconfig */,
+				A11ACD70EF6B4CB5C43F275C /* Pods-GTToday.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A1B6C412412191900812C5C /* GTToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1B6C502412191900812C5C /* Build configuration list for PBXNativeTarget "GTToday" */;
+			buildPhases = (
+				0B08F4E2062BE4A0DFE0F316 /* [CP] Check Pods Manifest.lock */,
+				1A1B6C3E2412191900812C5C /* Sources */,
+				1A1B6C3F2412191900812C5C /* Frameworks */,
+				1A1B6C402412191900812C5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTToday;
+			productName = GTToday;
+			productReference = 1A1B6C422412191900812C5C /* GTToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1A343641240FA11200FB08ED /* SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A343658240FA11300FB08ED /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildPhases = (
+				4CA768462F2ABD2A8CCEE68C /* [CP] Check Pods Manifest.lock */,
+				1A34363E240FA11200FB08ED /* Sources */,
+				1A34363F240FA11200FB08ED /* Frameworks */,
+				1A343640240FA11200FB08ED /* Resources */,
+				D9BC0F2228B6DA98798CCB46 /* [CP] Embed Pods Frameworks */,
+				1A38273D24109B9B00B1E094 /* Embed Frameworks */,
+				1A1B6C532412191900812C5C /* Embed App Extensions */,
+				1AE0C16B241F33D200FEADE2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A1B6C4E2412191900812C5C /* PBXTargetDependency */,
+			);
+			name = SampleApp;
+			productName = SampleApp;
+			productReference = 1A343642240FA11200FB08ED /* SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A34363A240FA11200FB08ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = penghuizhang;
+				TargetAttributes = {
+					1A1B6C412412191900812C5C = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					1A343641240FA11200FB08ED = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1A34363D240FA11200FB08ED /* Build configuration list for PBXProject "SampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A343639240FA11200FB08ED;
+			productRefGroup = 1A343643240FA11200FB08ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A343641240FA11200FB08ED /* SampleApp */,
+				1A1B6C412412191900812C5C /* GTToday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A1B6C402412191900812C5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A343640240FA11200FB08ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A34364F240FA11300FB08ED /* Assets.xcassets in Resources */,
+				1A38273F24109C5A00B1E094 /* icon.bundle in Resources */,
+				1A1B6C3D2411F65500812C5C /* ICONBLACK.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B08F4E2062BE4A0DFE0F316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GTToday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CA768462F2ABD2A8CCEE68C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9BC0F2228B6DA98798CCB46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A1B6C3E2412191900812C5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1B6C5524121EAF00812C5C /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A34363E240FA11200FB08ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACD4E9E2424EACA00C4F5D3 /* GTDetailViewController.m in Sources */,
+				1A952C532424AF1B0067EDE7 /* GTListItem.m in Sources */,
+				1A1B6C5624121EB300812C5C /* TodayViewController.m in Sources */,
+				1A34368B240FE43C00FB08ED /* GTVideoToolbar.m in Sources */,
+				1A34365D240FA28F00FB08ED /* GTNewsViewController.m in Sources */,
+				1A343693240FE46B00FB08ED /* GTMediator.m in Sources */,
+				1A343666240FA34C00FB08ED /* GTMineViewController.m in Sources */,
+				1A542C6A24132B5A0080D26E /* GTCommentManager.m in Sources */,
+				1A343660240FA30D00FB08ED /* GTVideoViewController.m in Sources */,
+				1A3827422410D09800B1E094 /* GTLocation.m in Sources */,
+				1A34368A240FE43C00FB08ED /* GTVideoCoverView.m in Sources */,
+				1A343663240FA33400FB08ED /* GTRecommendViewController.m in Sources */,
+				1A343679240FE38C00FB08ED /* GTListLoader.m in Sources */,
+				1A343682240FE40900FB08ED /* GTLogin.m in Sources */,
+				1A1B6C5C2412293700812C5C /* GTSearchBar.m in Sources */,
+				1A343689240FE43C00FB08ED /* GTVideoPlayer.m in Sources */,
+				1AFBEEAF242116980046A1A0 /* GTRNSModel.m in Sources */,
+				1A3827452410E26700B1E094 /* GTNotification.m in Sources */,
+				1A343655240FA11300FB08ED /* main.m in Sources */,
+				1A5291B52428458A00792D71 /* GTVideoModel.m in Sources */,
+				1A343692240FE46B00FB08ED /* GTSplashView.m in Sources */,
+				1A343694240FE46B00FB08ED /* GTScreen.m in Sources */,
+				1A34367F240FE3C300FB08ED /* GTNormalTableViewCell.m in Sources */,
+				1A34367E240FE3C300FB08ED /* GTDeleteCellView.m in Sources */,
+				1A343647240FA11200FB08ED /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A1B6C4E2412191900812C5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1B6C412412191900812C5C /* GTToday */;
+			targetProxy = 1A1B6C4D2412191900812C5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A1B6C512412191900812C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983CA9D603CE8F9ACBD7881A /* Pods-GTToday.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GTToday/GTToday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XSW63ZB9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp/GTFramework",
+				);
+				INFOPLIST_FILE = GTToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.penghuizhang.SampleApp.GTToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A1B6C522412191900812C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11ACD70EF6B4CB5C43F275C /* Pods-GTToday.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GTToday/GTToday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XSW63ZB9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp/GTFramework",
+				);
+				INFOPLIST_FILE = GTToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.penghuizhang.SampleApp.GTToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A343656240FA11300FB08ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A343657240FA11300FB08ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A343659240FA11300FB08ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098441D4724A6D11D7F2384D /* Pods-SampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SampleApp/SampleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XSW63ZB9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp/GTFramework",
+				);
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp/GTFramework",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.penghuizhang.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A34365A240FA11300FB08ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9225967BF08FE46E9C0E96 /* Pods-SampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SampleApp/SampleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XSW63ZB9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp/GTFramework",
+				);
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp/GTFramework",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.penghuizhang.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A1B6C502412191900812C5C /* Build configuration list for PBXNativeTarget "GTToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1B6C512412191900812C5C /* Debug */,
+				1A1B6C522412191900812C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A34363D240FA11200FB08ED /* Build configuration list for PBXProject "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A343656240FA11300FB08ED /* Debug */,
+				1A343657240FA11300FB08ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A343658240FA11300FB08ED /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A343659240FA11300FB08ED /* Debug */,
+				1A34365A240FA11300FB08ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A34363A240FA11200FB08ED /* Project object */;
+}
